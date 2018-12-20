@@ -1,0 +1,76 @@
+.pagination{
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-top: 8px;
+    overflow: visible;
+
+    &:after{
+	    content: " ";
+	    display: table;
+	    clear: both;
+	}
+	select{
+		width: auto;
+	    height: 22px;
+	    margin-right: 3px;
+	}
+	&.no-select select{
+	    display: none;
+	}
+	.total{
+	    margin-right: 10px;
+	    font-size: 12px;
+	    color: rgba(17, 158, 218, 0.87);
+	}
+	ul{
+	    float: right;
+	    margin: -2px 0 0 0;
+
+	    li{
+		    display: inline-block;
+		    list-style-type: none;
+		}
+	}
+	
+	li > a,
+	a,
+	span,
+	span.current.prev{
+	    float: none;
+	    display: inline;
+	    height: 20px;
+	    margin: 0px 2px;
+	    padding: 0 5px;
+	    border:2px #e3e3e3 solid;
+	    border-radius:5px !important;
+	    font-size:11px;
+	    line-height:20px;
+	    text-align:center;
+	    text-decoration:none;
+	    color: #858585;
+	    cursor: pointer;
+	}
+	li a:hover{
+	    border:2px #aaa solid;
+	    color: #858585;
+	    background: #f6f7f7;
+	}
+	li > a.current,
+	span.current{
+	    border:2px rgba(17, 158, 218, 0.54) solid;
+	    font-weight:700;
+	    color:rgba(17, 158, 218, 0.54);
+	}
+	li i{
+	    width: 1em;
+	}
+	.no-data{
+	    margin-top: -10px;
+	    margin-bottom: 15px;
+	    border: 1px solid #ddd; 
+	    border-top:none;    
+	    line-height: 30px;
+	    text-align: center;
+	}
+}

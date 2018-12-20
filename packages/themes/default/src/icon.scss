@@ -1,0 +1,335 @@
+@font-face {
+  font-family: 'fl-icon';
+  src:  url('fonts/fl-icon.eot?7vb58a');
+  src:  url('fonts/fl-icon.eot?7vb58a#iefix') format('embedded-opentype'),
+    url('fonts/fl-icon.ttf?7vb58a') format('truetype'),
+    url('fonts/fl-icon.woff?7vb58a') format('woff'),
+    url('fonts/fl-icon.svg?7vb58a#fl-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="fl-icon-"], [class*=" fl-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fl-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fl-icon-money:before {
+  content: "\e912";
+}
+.fl-icon-account:before {
+  content: "\e916";
+}
+.fl-icon-maximize:before {
+  content: "\e096";
+}
+.fl-icon-minimize:before {
+  content: "\e097";
+}
+.fl-icon-archive:before {
+  content: "\e927";
+}
+.fl-icon-submit:before {
+  content: "\e928";
+}
+.fl-icon-issue:before {
+  content: "\e929";
+}
+.fl-icon-export:before {
+  content: "\e92a";
+}
+.fl-icon-import:before {
+  content: "\e92b";
+}
+.fl-icon-cancel:before {
+  content: "\e92c";
+}
+.fl-icon-assign_area:before {
+  content: "\e92d";
+}
+.fl-icon-users:before {
+  content: "\e92e";
+}
+.fl-icon-log_out:before {
+  content: "\e92f";
+}
+.fl-icon-expire:before {
+  content: "\e930";
+}
+.fl-icon-scan:before {
+  content: "\e931";
+}
+.fl-icon-chart:before {
+  content: "\e932";
+}
+.fl-icon-copy:before {
+  content: "\e933";
+}
+.fl-icon-email:before {
+  content: "\e934";
+}
+.fl-icon-list:before {
+  content: "\e943";
+}
+.fl-icon-location:before {
+  content: "\e936";
+}
+.fl-icon-map:before {
+  content: "\e937";
+}
+.fl-icon-power_off:before {
+  content: "\e938";
+}
+.fl-icon-search_minus:before {
+  content: "\e939";
+}
+.fl-icon-search_plus:before {
+  content: "\e93a";
+}
+.fl-icon-unlink:before {
+  content: "\e93b";
+}
+.fl-icon-user_plus:before {
+  content: "\e93c";
+}
+.fl-icon-warning:before {
+  content: "\e93d";
+}
+.fl-icon-cloud_download:before {
+  content: "\e93e";
+}
+.fl-icon-location_o:before {
+  content: "\e93f";
+}
+.fl-icon-user_o:before {
+  content: "\e940";
+}
+.fl-icon-assign:before {
+  content: "\e9cb";
+}
+.fl-icon-search:before {
+  content: "\f002";
+}
+.fl-icon-user:before {
+  content: "\f007";
+}
+.fl-icon-check:before {
+  content: "\f00c";
+}
+.fl-icon-close:before {
+  content: "\f00d";
+}
+.fl-icon-setting:before {
+  content: "\f013";
+}
+.fl-icon-delete_o:before {
+  content: "\f014";
+}
+.fl-icon-download:before {
+  content: "\f019";
+}
+.fl-icon-refresh:before {
+  content: "\f021";
+}
+.fl-icon-password:before {
+  content: "\f023";
+}
+.fl-icon-print:before {
+  content: "\f02f";
+}
+.fl-icon-edit:before {
+  content: "\f040";
+}
+.fl-icon-check_square_o:before {
+  content: "\f046";
+}
+.fl-icon-play:before {
+  content: "\f04b";
+}
+.fl-icon-pause:before {
+  content: "\f04c";
+}
+.fl-icon-stop:before {
+  content: "\f04d";
+}
+.fl-icon-arrow_left:before {
+  content: "\f060";
+}
+.fl-icon-arrow_right:before {
+  content: "\f061";
+}
+.fl-icon-arrow_up:before {
+  content: "\f062";
+}
+.fl-icon-arrow_down:before {
+  content: "\f063";
+}
+.fl-icon-add:before {
+  content: "\f067";
+}
+.fl-icon-cut:before {
+  content: "\f068";
+}
+.fl-icon-view:before {
+  content: "\f06e";
+}
+.fl-icon-date:before {
+  content: "\f073";
+}
+.fl-icon-upload:before {
+  content: "\f093";
+}
+.fl-icon-bell_o:before {
+  content: "\f0a2";
+}
+.fl-icon-bell:before {
+  content: "\f0f3";
+}
+.fl-icon-bullet:before {
+  content: "\f10c";
+}
+.fl-icon-loading:before {
+  content: "\f110";
+}
+.fl-icon-circle:before {
+  content: "\f111";
+}
+.fl-icon-return:before {
+  content: "\f112";
+}
+.fl-icon-return_all:before {
+  content: "\f122";
+}
+.fl-icon-help:before {
+  content: "\f128";
+}
+.fl-icon-info:before {
+  content: "\f129";
+}
+.fl-icon-cut_square:before {
+  content: "\f146";
+}
+.fl-icon-check_square:before {
+  content: "\f14a";
+}
+.fl-icon-dollar:before {
+  content: "\f155";
+}
+.fl-icon-delete:before {
+  content: "\f1f8";
+}
+.fl-icon-warning_o:before {
+  content: "\e901";
+}
+.fl-icon-arrow_down_o:before {
+  content: "\e902";
+}
+.fl-icon-arrow_left_o:before {
+  content: "\e903";
+}
+.fl-icon-arrow_right_o:before {
+  content: "\e904";
+}
+.fl-icon-arrow_up_o:before {
+  content: "\e905";
+}
+.fl-icon-bar_chart:before {
+  content: "\e906";
+}
+.fl-icon-check_o:before {
+  content: "\e907";
+}
+.fl-icon-check-square:before {
+  content: "\e908";
+}
+.fl-icon-angle_down:before {
+  content: "\e909";
+}
+.fl-icon-angle_left:before {
+  content: "\e90a";
+}
+.fl-icon-angle_right:before {
+  content: "\e90b";
+}
+.fl-icon-angle_up:before {
+  content: "\e90c";
+}
+.fl-icon-angle_double_down:before {
+  content: "\e90d";
+}
+.fl-icon-angle_double_left:before {
+  content: "\e90e";
+}
+.fl-icon-angle_double_right:before {
+  content: "\e90f";
+}
+.fl-icon-angle_double_up:before {
+  content: "\e910";
+}
+.fl-icon-bullet_o:before {
+  content: "\e911";
+}
+.fl-icon-list_o:before {
+  content: "\e913";
+}
+.fl-icon-log_out_o:before {
+  content: "\e914";
+}
+.fl-icon-maximize_o:before {
+  content: "\e915";
+}
+.fl-icon-minimize_o:before {
+  content: "\e900";
+}
+.fl-icon-minus:before {
+  content: "\e917";
+}
+.fl-icon-more_horizontal:before {
+  content: "\e918";
+}
+.fl-icon-more_vertical:before {
+  content: "\e919";
+}
+.fl-icon-paperclip:before {
+  content: "\e91a";
+}
+.fl-icon-pause_o:before {
+  content: "\e91b";
+}
+.fl-icon-play_o:before {
+  content: "\e91c";
+}
+.fl-icon-add_o:before {
+  content: "\e91d";
+}
+.fl-icon-refresh_o:before {
+  content: "\e91e";
+}
+.fl-icon-upload_o:before {
+  content: "\e921";
+}
+.fl-icon-close_o:before {
+  content: "\e922";
+}
+.fl-icon-x_circle:before {
+  content: "\e923";
+}
+.fl-icon-download_o:before {
+  content: "\e924";
+}
+.fl-icon-return_o:before {
+  content: "\e925";
+}
+.fl-icon-return_all_o:before {
+  content: "\e926";
+}

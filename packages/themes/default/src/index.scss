@@ -1,0 +1,97 @@
+@import "var.scss";
+@import "icon.scss";
+@import "button.scss";
+@import "./form/form.scss";
+@import "validate.scss";
+@import "card.scss";
+@import "tab.scss";
+@import "table.scss";
+@import "pagination.scss";
+
+body,
+html{
+	font-size: $base-font-size;
+	color: $base-font-color;
+}
+[class*="fl-col-"] {
+  	float: left;
+  	box-sizing: border-box;
+}
+
+.fl-col-0 {
+  	display: none;
+}
+
+@for $i from 0 through 24 {
+  	.fl-col-#{$i} {
+    	width: (1 / 24 * $i * 100) * 1%;
+  	}
+}
+
+$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 120, 150);
+$sides: (top, bottom, left, right);
+
+@each $space in $spaceamounts {
+  	@each $side in $sides {
+	    .m-#{str-slice($side, 0, 1)}-#{$space} {
+	      	margin-#{$side}: #{$space}px !important;
+	    }
+  
+	    .p-#{str-slice($side, 0, 1)}-#{$space} {
+	      	padding-#{$side}: #{$space}px !important;
+	    }
+  	}
+}
+
+$colors: (
+  	red: $color-red,
+  	yellow: $color-yellow,
+  	green: $color-green,
+  	blue: $color-blue,
+  	gray: $color-gray,
+  	light_yellow: $color-light_yellow,
+  	light_green: $color-light_green,
+  	light_blue: $color-light_blue
+);
+$colornames: (red,yellow,green,blue,gray,light_yellow,light_green,light_blue);
+
+@each $colorname in $colornames {
+    .fl-color-#{$colorname} {
+      	color: map-get($colors, $colorname);
+    }
+
+    .fl-bg-#{$colorname} {
+    	background: map-get($colors, $colorname);
+    	@if $colorname == light_yellow{
+    		color: rgb(136, 136, 136);
+    	} @else {
+    		color: rgb(255, 255, 255);
+    	}
+    }
+}
+
+
+.clearfix{
+	&:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.hide{
+	display: none;
+}
+.hidden{
+	visibility: none;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}

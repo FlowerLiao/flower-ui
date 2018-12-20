@@ -1,0 +1,59 @@
+@import "var.scss";
+
+$card-content-padding: $base-padding - 5px $base-padding;
+$card-border: 1px #ebeef5 solid;
+.fl-card-wrapper + .fl-card-wrapper{
+	padding-left: $base-padding;
+}
+.fl-card-container{
+	position: relative;
+	/*padding: $base-padding;*/
+	border: $card-border;
+	border-radius: 5px;
+
+	.scalable-icon{
+		position: absolute;
+		right: 6px;
+		top: 9px;
+		font-size: 14px;
+		color: #666;
+		cursor: pointer;
+
+		&:hover{
+			color: $color-blue;
+		}
+	}
+}
+.fl-card-container.shadow{
+	box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+}
+.fl-card-container.scaled{
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 99;
+	width: calc(100% - 20px);
+	height: calc(100% - 20px);
+	background: #fff;
+}
+.fl-card-header{
+	padding: $card-content-padding;
+}
+.fl-card-title{
+	font-size: 18px; 
+	font-weight: bolder;
+}
+.fl-card-header.border{
+	border-bottom: $card-border;
+}
+
+.fl-card-body{
+	padding: $card-content-padding;
+}
+
+.fl-card-footer{
+	padding: $card-content-padding;
+}
+.fl-card-footer.border{
+	border-top: $card-border;
+}

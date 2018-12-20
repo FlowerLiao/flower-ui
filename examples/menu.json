@@ -1,0 +1,28 @@
+{
+    "menus": [{
+        "name": "Button 按钮",
+        "path": "button"
+    },{
+        "name": "Form 表单",
+        "path": "form",
+        "children": [{
+            "name": "Input 文本框",
+            "path": "input"
+        }]
+    },{
+        "name": "Validate 表单校验",
+        "path": "validate"
+    },{
+        "name": "Tab 标签页",
+        "path": "tab"
+    },{
+        "name": "Table 表格",
+        "path": "table"
+    },{
+        "name": "Card 卡片",
+        "path": "card"
+    },{
+        "name": "Ami Web Api",
+        "path": "ami"
+    }]
+}

@@ -1,0 +1,126 @@
+@import "var.scss";
+.fl-btn{
+    --buttonHeight: 30px;
+    --buttonWidth: 70px;
+    --fontSize: 14px;
+    --ftColor: inherit;
+    --bgColor: rgb(255, 255, 255);
+    --borderColor: rgb(221, 221, 221);
+    
+    display: inline-block;
+    height: var(--buttonHeight);
+    min-width: var(--buttonWidth);
+    margin-bottom: 0;
+    padding: 0 10px;
+    border: 1px solid var(--borderColor);
+    border-radius: 4px;
+    line-height: calc(var(--buttonHeight) - 6px);
+    text-align: center;
+    font-size: $base-font-size;
+    font-weight: 400;
+    color: var(--ftColor);
+    background: var(--bgColor);
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: center !important;
+    text-shadow: none;
+    &:hover,
+    &:focus{
+        color: var(--ftColor);
+        background: rgba(232, 232, 232, 0.27);
+        text-decoration: none;
+        outline: none;
+    }
+    &:disabled{
+        border-color: #c3c6cc !important;
+        background-color: #c3c6cc !important;
+        cursor: not-allowed;
+    }
+
+    /* 图标 */
+    & > i{
+        display: inline-block;
+        margin-top: -1px;
+        line-height: $base-font-size;
+        font-family: var(--iconFont);    
+        font-size: inherit;
+    }
+}
+.fl-btn[class*="fl-btn-"]{
+    &:hover,
+    &:focus{
+        background: var(--borderColor);
+    }
+}
+.fl-btn.auto{
+    min-width: auto;
+}
+
+/* 颜色 */
+.fl-btn-white{
+    --ftColor: #666;
+    --bgColor: rgb(255, 255, 255);
+    &:hover,
+    &:focus{
+        background: rgba(232, 232, 232, 0.27) !important;
+    }
+}
+.fl-btn-blue{
+    --ftColor: #fff;
+    --bgColor: rgba(87, 142, 190);
+    --borderColor: rgba(87,142,190,0.80);
+}
+.fl-btn-green{
+    --ftColor: #fff;
+    --bgColor: rgb(92, 184, 92);
+    --borderColor: rgba(92,184,92,0.80);
+}
+.fl-btn-yellow{
+    --ftColor: #fff;
+    --bgColor: rgb(255, 188, 29);
+    --borderColor: rgb(255, 188, 29,0.80);
+}
+.fl-btn-red{
+    --ftColor: #fff;
+    --bgColor: rgb(217, 83, 79);
+    --borderColor: rgb(217, 83, 79,0.80);
+}
+/* 大小 */
+.fl-btn-medium{
+    --buttonHeight: 26px;
+    --buttonWidth: 60px;
+    font-size: 13px;
+}
+.fl-btn-small{
+    --buttonHeight: 23px;
+    --buttonWidth: 54px;
+    font-size: 12px;
+}
+.fl-btn-mini{
+    --buttonHeight: 20px;
+    --buttonWidth: 42px;
+    font-size: 12px;
+}
+
+/* 按钮组合 */
+.fl-btn-group{
+    font-size: 0px;
+    .fl-btn{
+        &:first-child{
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        &:not(:first-child):not(:last-child){
+            border-radius: 0;
+        }
+        &:last-child{
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        &:not(:first-child){
+            margin-left: -1px;
+            border-left-color: rgba(238, 238, 238, 0.21);
+        }
+    }
+}

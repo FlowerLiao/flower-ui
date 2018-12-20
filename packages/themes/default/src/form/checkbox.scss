@@ -1,0 +1,38 @@
+@import "../var";
+@import "../icon";
+
+.fl-checkbox{
+    display: inline-block;
+    cursor: pointer;
+
+    input[type=checkbox]{
+    	display: none;
+    } 
+    input[type=checkbox] + span:before{
+    	content: "\F04D";
+		position: relative;
+		top: -1px;
+		display: inline-block;
+		width: $base-font-size;
+		height: $base-font-size;
+		border: 1px $base-font-color solid;
+		border-radius: 2px;
+		box-sizing: border-box;
+		font-family: "fl-icon";
+		font-size: $base-font-size - 2;
+		background: #fff;
+		color: #fff;	
+    }
+    input[type=checkbox]:checked + span:before{
+    	content: "\F00C";
+		color: $base-font-color;
+    }
+    input[type=checkbox]:disabled + span{
+    	color: $color-disabled;
+    	&:before{
+	    	color: $color-disabled;
+	    	border-color: #e4e7ed;
+			background: $color-disabled;
+	    }
+    }
+}

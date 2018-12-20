@@ -1,0 +1,1 @@
+@charset "UTF-8";.validate-error{position:absolute;top:100%;display:block;z-index:1;max-width:180px;padding-top:2px;line-height:1em;overflow:hidden;font-size:.8em;white-space:nowrap;text-overflow:ellipsis;color:red;cursor:pointer}.validate-error.fl-icon-info{position:relative;display:inline-block;top:.1em;margin-left:3px;font-size:1em}

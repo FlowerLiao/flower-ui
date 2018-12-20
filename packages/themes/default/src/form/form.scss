@@ -1,0 +1,14 @@
+@import "input";
+@import "checkbox";
+
+.form-row{
+	position: relative;
+	width: 100%;
+
+	.form-item{
+		position: relative;
+	}
+}
+.form-row + .form-row{
+	margin-top: $base-padding; 
+}
